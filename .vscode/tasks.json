@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Run",
+            "command": "node",
+            "args": ["${file}"],
+            "options": {
+                "cwd": "${fileDirname}",
+                "shell": { "executable": "bash", "args": ["-c"] }
+            },
+
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true,
+                "close": false,
+                "echo": true,
+                "focus": true,
+                "panel": "shared",
+                "reveal": "always",
+                "showReuseMessage": true
+            }
+        }
+    ]
+}
